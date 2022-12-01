@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "esnext",
+    "target": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+    ],
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "preserveConstEnums": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "noEmit": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "noUncheckedIndexedAccess": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "resolveJsonModule": true,
+    "removeComments": true,
+    "incremental": false,
+    "jsx": "preserve",
+    "types": [
+      "vite/client",
+      "quasar",
+      "node"
+    ],
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "types/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "cypress",
+    "**/*.js"
+  ]
+}

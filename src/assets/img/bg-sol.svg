@@ -1,0 +1,42 @@
+<!--
+  - This file is part of Solana Reference Stake Pool code.
+  -
+  - Copyright © 2021, mFactory GmbH
+  -
+  - Solana Reference Stake Pool is free software: you can redistribute it
+  - and/or modify it under the terms of the GNU Affero General Public License
+  - as published by the Free Software Foundation, either version 3
+  - of the License, or (at your option) any later version.
+  -
+  - Solana Reference Stake Pool is distributed in the hope that it
+  - will be useful, but WITHOUT ANY WARRANTY; without even the implied
+  - warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+  - See the GNU Affero General Public License for more details.
+  -
+  - You should have received a copy of the GNU Affero General Public License
+  - along with this program.
+  - If not, see <https://www.gnu.org/licenses/agpl-3.0.html>.
+  -
+  - You can be released from the requirements of the Affero GNU General Public License
+  - by purchasing a commercial license. The purchase of such a license is
+  - mandatory as soon as you develop commercial activities using the
+  - Solana Reference Stake Pool code without disclosing the source code of
+  - your own applications.
+  -
+  - The developer of this program can be contacted at <info@mfactory.ch>.
+  -->
+
+<svg width="823" height="647" viewBox="0 0 823 647" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.04">
+<g clip-path="url(#clip0_747_573)">
+<path d="M133.688 493.562C138.654 488.583 145.483 485.679 152.726 485.679H809.553C821.556 485.679 827.557 500.201 819.073 508.706L689.321 638.782C684.355 643.761 677.526 646.665 670.283 646.665H13.4555C1.45294 646.665 -4.54832 632.143 3.93622 623.638L133.688 493.562Z" fill="#383838"/>
+<path d="M133.651 7.88336C138.824 2.90439 145.653 0 152.689 0H809.517C821.519 0 827.52 14.522 819.036 23.0277L689.285 153.103C684.318 158.082 677.489 160.986 670.246 160.986H13.4188C1.41632 160.986 -4.58494 146.465 3.8996 137.959L133.651 7.88336Z" fill="#383838"/>
+<path d="M689.321 249.146C684.355 244.167 677.526 241.263 670.283 241.263H13.4555C1.45294 241.263 -4.54832 255.785 3.93622 264.29L133.688 394.366C138.654 399.345 145.483 402.249 152.726 402.249H809.553C821.556 402.249 827.557 387.727 819.073 379.222L689.321 249.146Z" fill="#383838"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_747_573">
+<rect width="823" height="646.643" fill="white"/>
+</clipPath>
+</defs>
+</svg>
