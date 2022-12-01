@@ -40,22 +40,6 @@ const DEV_STAKE_POOL_ADDRESS = import.meta.env.VITE_DEV_STAKE_POOL_ADDRESS
 
 export const ENDPOINTS: Endpoint[] = [
   {
-    id: 'genesys-mainnet',
-    name: 'Genesys RPC',
-    cluster: 'mainnet-beta',
-    url: 'https://ssc-dao.genesysgo.net/',
-    stakePoolAddress: MAIN_STAKE_POOL_ADDRESS,
-    stakeLimit: Number(MAIN_STAKE_LIMIT),
-  },
-  {
-    id: 'serum-mainnet',
-    name: 'Serum RPC',
-    cluster: 'mainnet-beta',
-    url: 'https://solana-api.projectserum.com/',
-    stakePoolAddress: MAIN_STAKE_POOL_ADDRESS,
-    stakeLimit: Number(MAIN_STAKE_LIMIT),
-  },
-  {
     id: 'rpcpool-mainnet',
     name: 'RPCPool RPC',
     cluster: 'mainnet-beta',
