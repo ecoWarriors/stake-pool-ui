@@ -32,7 +32,7 @@
     "@quasar/extras": "^1.14.2",
     "@solana/buffer-layout": "^4.0.0",
     "@solana/spl-token": "^0.3.6",
-    "@solana/wallet-adapter-wallets": "^0.19.6",
+    "@solana/wallet-adapter-wallets": "^0.19.7",
     "@solana/web3.js": "^1.46.0",
     "@vueuse/core": "^9.6.0",
     "@vueuse/head": "^1.0.19",
