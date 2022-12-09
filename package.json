@@ -31,6 +31,7 @@
   "dependencies": {
     "@quasar/extras": "^1.15.7",
     "@solana/buffer-layout": "^4.0.0",
+    "@solana/spl-stake-pool": "^0.6.4",
     "@solana/spl-token": "^0.3.6",
     "@solana/wallet-adapter-wallets": "^0.19.8",
     "@solana/web3.js": "^1.70.0",
