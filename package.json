@@ -42,7 +42,7 @@
     "bs58": "^5.0.0",
     "lodash-es": "^4.17.21",
     "mitt": "^3.0.0",
-    "pinia": "^2.0.14",
+    "pinia": "^2.0.28",
     "quasar": "^2.7.4",
     "solana-wallets-vue": "^0.5.2",
     "spl-stake-pool": "^0.1.0",
