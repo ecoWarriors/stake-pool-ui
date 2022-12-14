@@ -162,6 +162,7 @@ export default defineConfig(({ mode }) => {
         'buffer',
         'buffer-layout',
         'eventemitter3',
+        '@solana/spl-stake-pool',
         '@solana/web3.js',
         '@solana/buffer-layout',
       ],

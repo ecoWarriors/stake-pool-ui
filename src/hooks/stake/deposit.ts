@@ -30,7 +30,7 @@ import { useQuasar } from 'quasar'
 import { useAnchorWallet } from 'solana-wallets-vue'
 import { computed, ref, toRef } from 'vue'
 import { PublicKey, StakeProgram } from '@solana/web3.js'
-import { depositSol, depositStake } from '@solana/spl-stake-pool/src'
+import * as solanaStakePool from '@solana/spl-stake-pool'
 import type { ProgramAccount } from '@/store'
 import { useBalanceStore, useConnectionStore, useStakePoolStore } from '@/store'
 import { useMonitorTransaction } from '@/hooks'
@@ -82,7 +82,7 @@ export function useDeposit() {
           throw new Error('Wrong stake account state, must be delegated to validator')
         }
 
-        const { rentFee, instructions, signers } = await depositStake(
+        const { rentFee, instructions, signers } = await solanaStakePool.depositStake(
           connectionStore.connection,
           connectionStore.stakePoolAddress!,
           wallet.value!.publicKey!,
@@ -139,7 +139,7 @@ export function useDeposit() {
 
         loading.value = true
 
-        const { rentFee, instructions, signers } = await depositSol(
+        const { rentFee, instructions, signers } = await solanaStakePool.depositSol(
           connectionStore.connection,
           connectionStore.stakePoolAddress!,
           wallet.value.publicKey,
