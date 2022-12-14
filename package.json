@@ -31,6 +31,7 @@
   "dependencies": {
     "@quasar/extras": "^1.14.2",
     "@solana/buffer-layout": "^4.0.0",
+    "@solana/spl-stake-pool": "mfactory-lab/jfactory-stake-pool#8995f4a",
     "@solana/spl-token": "^0.3.6",
     "@solana/wallet-adapter-wallets": "^0.19.6",
     "@solana/web3.js": "^1.46.0",
@@ -44,9 +45,7 @@
     "pinia": "^2.0.14",
     "quasar": "^2.7.4",
     "solana-wallets-vue": "^0.5.2",
-    "spl-stake-pool": "^0.1.0",
     "vue": "^3.2.37",
-    "vue-demi": "^0.13.11",
     "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.16"
   },
