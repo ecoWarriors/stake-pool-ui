@@ -40,14 +40,6 @@ const DEV_STAKE_POOL_ADDRESS = import.meta.env.VITE_DEV_STAKE_POOL_ADDRESS
 
 export const ENDPOINTS: Endpoint[] = [
   {
-    id: 'rpcpool-mainnet',
-    name: 'RPCPool RPC',
-    cluster: 'mainnet-beta',
-    url: 'https://mainnet.rpcpool.com/',
-    stakePoolAddress: MAIN_STAKE_POOL_ADDRESS,
-    stakeLimit: Number(MAIN_STAKE_LIMIT),
-  },
-  {
     id: 'mainnet',
     name: 'Solana RPC',
     cluster: 'mainnet-beta',
@@ -97,9 +89,9 @@ export const DEFAULT_COMMITMENT: Commitment = 'confirmed'
 
 export const DEFAULT_MONITOR_COMMITMENT: Commitment = 'processed'
 
-export const DEFAULT_SEND_TIMEOUT = 15000
+export const DEFAULT_SEND_TIMEOUT = 30000
 
 /**
  * Time to allow for the server to initially process a transaction (in milliseconds)
  */
-export const DEFAULT_CONFIRM_TIMEOUT = 120000
+export const DEFAULT_CONFIRM_TIMEOUT = 240000
