@@ -30,8 +30,7 @@ import { computed, ref, watch } from 'vue'
 import { defineStore } from 'pinia'
 import type { Connection, ParsedAccountData } from '@solana/web3.js'
 import { PublicKey, ValidatorInfo } from '@solana/web3.js'
-import { findWithdrawAuthorityProgramAddress } from '@solana/spl-stake-pool/src/utils'
-import { STAKE_POOL_PROGRAM_ID } from '@solana/spl-stake-pool/src'
+import * as solanaStakePool from '@solana/spl-stake-pool'
 import { getStakeAccountsByWithdrawAuthority, shortenAddress } from '@/utils'
 import { useConnectionStore } from '@/store'
 import { VALIDATORS_RELOAD_INTERVAL } from '@/config'
@@ -158,7 +157,7 @@ export const useValidatorStore = defineStore('validators', () => {
 })
 
 async function getStakeAccounts(connection: Connection, stakePoolAddress: PublicKey) {
-  const poolWithdrawAuthority = await findWithdrawAuthorityProgramAddress(
+  const poolWithdrawAuthority = await solanaStakePool.findWithdrawAuthorityProgramAddress(
     STAKE_POOL_PROGRAM_ID,
     stakePoolAddress,
   )
