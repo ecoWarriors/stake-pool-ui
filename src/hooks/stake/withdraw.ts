@@ -29,7 +29,8 @@
 import { useQuasar } from 'quasar'
 import { computed, ref, toRef, watch } from 'vue'
 import { useAnchorWallet, useWallet } from 'solana-wallets-vue'
-import * as solanaStakePool from '@solana/spl-stake-pool'
+import { withdrawSol, withdrawStake } from '@solana/spl-stake-pool/src'
+import type { ValidatorAccount } from '@solana/spl-stake-pool/src/utils'
 import { useDebounce } from '@vueuse/core'
 import type { Keypair } from '@solana/web3.js'
 import { StakeProgram } from '@solana/web3.js'
@@ -103,7 +104,7 @@ export function useWithdraw() {
           console.log('|- WITHDRAW SOL')
           console.log('------------------------')
 
-          const { instructions, signers } = await solanaStakePool.withdrawSol(
+          const { instructions, signers } = await withdrawSol(
             connectionStore.connection,
             connectionStore.stakePoolAddress!,
             wallet.value!.publicKey!,
@@ -118,7 +119,7 @@ export function useWithdraw() {
           return true
         }
 
-        const { instructions: withdrawInstructions, signers } = await solanaStakePool.withdrawStake(
+        const { instructions: withdrawInstructions, signers } = await withdrawStake(
           connectionStore.connection,
           connectionStore.stakePoolAddress!,
           wallet.value!.publicKey!,
@@ -194,7 +195,7 @@ export function useWithdraw() {
 /**
  * Try to use APY comparator instead of lamport
  * @param {number} epoch
- * @returns {Promise<((a: solanaStakePool.ValidatorAccount, b: solanaStakePool.ValidatorAccount) => number) | undefined>}
+ * @returns {Promise<((a: ValidatorAccount, b: ValidatorAccount) => number) | undefined>}
  */
 async function prepareApyComparator(epoch: number) {
   if (!epoch) {
@@ -209,7 +210,7 @@ async function prepareApyComparator(epoch: number) {
         return res
       }, {})
       console.log('Use APY Comparator')
-      return (a: solanaStakePool.ValidatorAccount, b: solanaStakePool.ValidatorAccount) => {
+      return (a: ValidatorAccount, b: ValidatorAccount) => {
         const aVoteId = a.voteAddress?.toBase58()
         const bVoteId = b.voteAddress?.toBase58()
         if (!aVoteId || !bVoteId) {
