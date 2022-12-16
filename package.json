@@ -51,7 +51,7 @@
     "vue-router": "^4.0.16"
   },
   "devDependencies": {
-    "@antfu/eslint-config-vue": "^0.33.1",
+    "@antfu/eslint-config-vue": "^0.34.0",
     "@quasar/vite-plugin": "^1.0.10",
     "@rollup/plugin-inject": "^5.0.2",
     "@types/bn.js": "^5.1.0",
