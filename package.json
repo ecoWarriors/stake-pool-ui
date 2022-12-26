@@ -43,7 +43,7 @@
     "lodash-es": "^4.17.21",
     "mitt": "^3.0.0",
     "pinia": "^2.0.14",
-    "quasar": "^2.7.4",
+    "quasar": "^2.11.2",
     "solana-wallets-vue": "^0.5.2",
     "vue": "^3.2.37",
     "vue-demi": "^0.13.11",
