@@ -32,7 +32,7 @@
     "@quasar/extras": "^1.14.2",
     "@solana/buffer-layout": "^4.0.0",
     "@solana/spl-stake-pool": "mfactory-lab/jfactory-stake-pool#8995f4a",
-    "@solana/spl-token": "^0.1.8",
+    "@solana/spl-token": "^0.3.7",
     "@solana/wallet-adapter-wallets": "^0.19.10",
     "@solana/web3.js": "^1.46.0",
     "@vueuse/core": "^8.7.5",
