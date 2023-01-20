@@ -27,7 +27,7 @@
  */
 
 import type { Commitment } from '@solana/web3.js'
-import { clusterApiUrl } from '@solana/web3.js'
+// import { clusterApiUrl } from '@solana/web3.js'
 import type { Endpoint } from '@/store'
 
 const MAIN_STAKE_POOL_ADDRESS = import.meta.env.VITE_MAIN_STAKE_POOL_ADDRESS
@@ -43,7 +43,7 @@ export const ENDPOINTS: Endpoint[] = [
     id: 'mainnet',
     name: 'Solana RPC',
     cluster: 'mainnet-beta',
-    url: clusterApiUrl('mainnet-beta'),
+    url: 'https://maximum-shy-daylight.solana-mainnet.discover.quiknode.pro/3da16dc41c151e7ae50e09606d81a3add886e224/',
     stakePoolAddress: MAIN_STAKE_POOL_ADDRESS,
     stakeLimit: Number(MAIN_STAKE_LIMIT),
   },
