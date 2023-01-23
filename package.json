@@ -36,7 +36,7 @@
     "@solana/wallet-adapter-wallets": "^0.19.10",
     "@solana/web3.js": "^1.46.0",
     "@vueuse/core": "^9.11.1",
-    "@vueuse/head": "^0.7.6",
+    "@vueuse/head": "^1.0.23",
     "axios": "^0.27.0",
     "bn.js": "^5.2.0",
     "bs58": "^5.0.0",
