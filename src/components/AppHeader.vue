@@ -27,16 +27,20 @@
   -->
 
 <script setup lang="ts">
-import { APP_LOGO } from '@/config'
 </script>
 
 <template>
   <q-header :class="!$q.dark.isActive ? 'bg-white text-dark' : null" class="app-header">
     <div class="container">
       <q-toolbar>
-        <router-link class="app-header__logo" to="/">
-          <img v-if="!!APP_LOGO" alt="app-logo" :src="APP_LOGO">
-          <img v-else alt="app-logo" src="@/assets/img/customize/app-logo.svg">
+        <router-link class="app-header__logo" to="/" :style="{ 'text-decoration': 'none' }">
+          <div style="display:flex;align-items: center;">
+            <img alt="app-logo" src="@/assets/img/customize/app-logo.png" class="image-logo">
+            <div>
+              <span class="block text-white symbol">ESG</span>
+              <span class="block text-no-wrap text-white group-name">ecoToken Stake Group</span>
+            </div>
+          </div>
         </router-link>
         <div class="xs-hide">
           <stacked-and-liquidity />
@@ -56,3 +60,18 @@ import { APP_LOGO } from '@/config'
     </div>
   </q-header>
 </template>
+
+<style scoped>
+    .image-logo {
+        width:64px;
+        height:64px;
+        margin-right:16px;
+    }
+    .symbol {
+        font-size: 48px;
+        line-height: 42px;
+    }
+    .group-name {
+        font-size: 12px;
+    }
+</style>
