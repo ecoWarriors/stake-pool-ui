@@ -9,8 +9,8 @@
       </h4>
       <div>
         <div class="project-thumbnail">
-          <img src="src/assets/img/project/thumbnail.png" alt="Project thumbnail">
-          <img src="src/assets/img/project/statistics.png" alt="Project statistics">
+          <img src="@/assets/img/project/thumbnail.png" alt="Project thumbnail">
+          <img src="@/assets/img/project/statistics.png" alt="Project statistics">
         </div>
         <div class="project-description">
           <p>
