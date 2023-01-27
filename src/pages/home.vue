@@ -32,6 +32,7 @@
 <template>
   <q-page>
     <firstlook-section />
+    <project-description />
     <faq-section />
     <custom-section />
   </q-page>

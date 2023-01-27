@@ -22,6 +22,7 @@ declare module '@vue/runtime-core' {
     FaqSection: typeof import('./../src/components/customize/FaqSection.vue')['default']
     FirstlookSection: typeof import('./../src/components/FirstlookSection.vue')['default']
     PasswordProtect: typeof import('./../src/components/PasswordProtect.vue')['default']
+    ProjectDescription: typeof import('./../src/components/ProjectDescription.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     StackedAndLiquidity: typeof import('./../src/components/StackedAndLiquidity.vue')['default']
