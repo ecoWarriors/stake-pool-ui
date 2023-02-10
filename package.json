@@ -34,7 +34,7 @@
     "@solana/spl-stake-pool": "mfactory-lab/jfactory-stake-pool#8995f4a",
     "@solana/spl-token": "^0.3.7",
     "@solana/wallet-adapter-wallets": "^0.19.11",
-    "@solana/web3.js": "^1.46.0",
+    "@solana/web3.js": "^1.73.2",
     "@vueuse/core": "^9.12.0",
     "@vueuse/head": "^1.0.25",
     "axios": "^1.3.1",
