@@ -61,7 +61,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
-    "eslint": "^8.32.0",
+    "eslint": "^8.33.0",
     "jsbi": "^4.3.0",
     "path": "^0.12.7",
     "push-dir": "^0.4.1",
