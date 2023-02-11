@@ -44,7 +44,7 @@
     "mitt": "^3.0.0",
     "pinia": "^2.0.14",
     "quasar": "^2.7.4",
-    "solana-wallets-vue": "^0.5.2",
+    "solana-wallets-vue": "^0.6.0",
     "vue": "^3.2.37",
     "vue-demi": "^0.13.11",
     "vue-gtag": "^2.0.1",
@@ -58,7 +58,7 @@
     "@types/bs58": "^4.0.1",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.11.18",
-    "@vitejs/plugin-vue": "^2.3.3",
+    "@vitejs/plugin-vue": "^3.1.0",
     "@volar/vue-language-server": "^1.0.24",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
@@ -70,9 +70,9 @@
     "sass": "1.58.0",
     "typescript": "^4.9.4",
     "unplugin-vue-components": "^0.23.0",
-    "vite": "^2.9.13",
+    "vite": "^3.1.0",
     "vite-plugin-checker": "^0.5.5",
-    "vite-plugin-chunk-split": "^0.2.4",
+    "vite-plugin-chunk-split": "^0.2.7",
     "vite-plugin-html": "^3.2.0"
   }
 }
