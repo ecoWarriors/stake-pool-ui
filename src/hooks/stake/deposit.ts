@@ -62,7 +62,7 @@ export function useDeposit() {
   const depositFee = computed(
     () =>
       lamportsPerSignature.value * 2
-      + (wallet.value?.publicKey && !hasTokenAccount.value ? minRentBalance.value : 0),
+          + ((wallet.value?.publicKey && !hasTokenAccount.value) ? minRentBalance.value : 0),
   )
   const depositing = computed(() => loading.value || sending.value)
 
