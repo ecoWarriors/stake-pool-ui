@@ -28,7 +28,7 @@
 
 <script lang="ts">
 import { computed, defineComponent, ref } from 'vue'
-import type { Wallet } from 'solana-wallets-vue'
+import type { Wallet } from 'solana-wallets-vue/dist/types'
 import { useWallet } from 'solana-wallets-vue'
 import { evaClose } from '@quasar/extras/eva-icons'
 import { WalletReadyState } from '@solana/wallet-adapter-base'
