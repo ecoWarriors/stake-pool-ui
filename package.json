@@ -59,6 +59,7 @@
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.11.18",
     "@vitejs/plugin-vue": "^2.3.3",
+    "@volar/vue-language-server": "^1.0.24",
     "critters": "^0.0.16",
     "cross-env": "^7.0.3",
     "eslint": "^8.33.0",
