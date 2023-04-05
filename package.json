@@ -5,10 +5,10 @@
   "packageManager": "pnpm@8.1.1",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mfactory-lab/reference-pool.git"
+    "url": "git+https://github.com/ecowarriors/restake-pool-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/mfactory-lab/reference-pool/issues"
+    "url": "https://github.com/ecowarriors/stake-pool-ui/issues"
   },
   "licenses": [
     {
@@ -31,7 +31,7 @@
   "dependencies": {
     "@quasar/extras": "^1.16.2",
     "@solana/buffer-layout": "^4.0.1",
-    "@solana/spl-stake-pool": "github:mfactory-lab/jfactory-stake-pool#8995f4a",
+    "@solana/spl-stake-pool": "^0.6.5",
     "@solana/spl-token": "^0.1.8",
     "@solana/wallet-adapter-wallets": "^0.16.10",
     "@solana/web3.js": "^1.75.0",

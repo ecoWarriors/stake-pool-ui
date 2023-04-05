@@ -8,8 +8,8 @@ dependencies:
     specifier: ^4.0.1
     version: 4.0.1
   '@solana/spl-stake-pool':
-    specifier: github:mfactory-lab/jfactory-stake-pool#8995f4a
-    version: github.com/mfactory-lab/jfactory-stake-pool/8995f4a
+    specifier: ^0.6.5
+    version: 0.6.5
   '@solana/spl-token':
     specifier: ^0.1.8
     version: 0.1.8
@@ -665,6 +665,22 @@ packages:
     engines: {node: '>=5.10'}
     dependencies:
       buffer: 6.0.3
+    dev: false
+
+  /@solana/spl-stake-pool@0.6.5:
+    resolution: {integrity: sha512-gAYjX4LlRem3Bje1csZOOBStX8wAH8b8tu4sublUTIoJxLMdEbXqnwc8RJ2lAsmFkjxxomEM9Hk65F8jcvv15A==}
+    dependencies:
+      '@project-serum/borsh': 0.2.5(@solana/web3.js@1.75.0)
+      '@solana/buffer-layout': 4.0.1
+      '@solana/spl-token': 0.1.8
+      '@solana/web3.js': 1.75.0
+      bn.js: 5.2.1
+      buffer: 6.0.3
+    transitivePeerDependencies:
+      - bufferutil
+      - encoding
+      - supports-color
+      - utf-8-validate
     dev: false
 
   /@solana/spl-token@0.1.8:
@@ -5642,21 +5658,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  github.com/mfactory-lab/jfactory-stake-pool/8995f4a:
-    resolution: {tarball: https://codeload.github.com/mfactory-lab/jfactory-stake-pool/tar.gz/8995f4a}
-    name: '@solana/spl-stake-pool'
-    version: 0.6.5
-    dependencies:
-      '@project-serum/borsh': 0.2.5(@solana/web3.js@1.75.0)
-      '@solana/buffer-layout': 4.0.1
-      '@solana/spl-token': 0.1.8
-      '@solana/web3.js': 1.75.0
-      bn.js: 5.2.1
-      buffer: 6.0.3
-    transitivePeerDependencies:
-      - bufferutil
-      - encoding
-      - supports-color
-      - utf-8-validate
-    dev: false
