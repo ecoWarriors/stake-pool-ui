@@ -44,7 +44,7 @@
     "mitt": "^3.0.0",
     "pinia": "^2.0.14",
     "quasar": "^2.7.4",
-    "solana-wallets-vue": "^0.4.1",
+    "solana-wallets-vue": "^0.6.0",
     "vue": "^3.2.37",
     "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.16"
