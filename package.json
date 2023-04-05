@@ -2,7 +2,7 @@
   "name": "xpool",
   "version": "0.0.3",
   "private": true,
-  "packageManager": "pnpm@7.4.0",
+  "packageManager": "pnpm@8.1.1",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mfactory-lab/reference-pool.git"
